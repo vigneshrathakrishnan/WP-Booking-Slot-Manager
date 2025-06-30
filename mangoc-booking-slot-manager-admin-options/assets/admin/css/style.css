@@ -1,0 +1,91 @@
+.cmb-row.cmb-repeat-group-wrap.cmb-type-group {
+    margin-bottom : 25px ;
+}
+
+/*.cmb-row.cmb-type-multicheck{
+    margin-bottom : 25px !important ;
+}
+*/
+
+.cmb-repeatable-group .cmb-group-title {
+    background-color: #effaff !important;
+}
+
+.cmb-row.cmb-repeat-group-wrap.cmb-type-group.cmb2-id-pc-time-slot-manager-grouped-standard-hours{
+    margin-top: 20px;
+}
+
+.cmb-row.cmb-type-textarea.cmb2-id-specified-excluded-dates{
+    margin-bottom: 25px;
+}
+
+/* Admin Time Slot Manager */
+.time-slot-manager_page_pc_time_slot_manager_available_hours_options.js .inside {
+    margin: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.time-slot-manager_page_pc_time_slot_manager_available_hours_options .cmb-repeatable-grouping {
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.cmb-repeatable-grouping > .cmb-remove-group-row, 
+.cmb-repeatable-grouping > .cmbhandle-title,
+.cmb-repeatable-grouping > .cmbhandle {
+    display: none;
+}
+
+.time-slot-manager_page_pc_time_slot_manager_available_hours_options .cmb-repeat-group-field,
+.time-slot-manager_page_pc_time_slot_manager_available_hours_options .cmb-remove-field-row {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.time-slot-manager_page_pc_time_slot_manager_available_hours_options .cmb-repeat-group-field .cmb-th,
+.time-slot-manager_page_pc_time_slot_manager_available_hours_options .cmb-repeat-group-field .cmb-td {
+    width: initial !important;
+    float: initial !important;
+}
+
+/* .time-slot-manager_page_pc_time_slot_manager_available_hours_options .cmb-remove-field-row .cmb-remove-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    column-gap: 5px;
+    row-gap: 5px;
+}
+
+.time-slot-manager_page_pc_time_slot_manager_available_hours_options .cmb-repeatable-group button.cmb-remove-group-row.button-secondary {
+    grid-area: span 2 / span 2;
+} */
+
+.time-slot-manager_page_pc_time_slot_manager_available_hours_options .cmb-repeatable-group .button-secondary {
+    float: initial;
+    margin: 0;
+}
+
+.time-slot-manager_page_pc_time_slot_manager_available_hours_options .cmb-repeatable-group a.button-secondary {
+    display: none;
+}
+
+.cmb-remove-field-row {
+    display: flex;
+}
+
+.cmb-remove-field-row .cmb-remove-row {
+    display: flex;
+    align-items: end;
+}
+
+@media only screen and (max-width: 767px) {
+    .wp-core-ui .cmb-type-select select, .wp-admin .cmb-type-select .form-table select {
+        padding: 0 24px 0 8px;
+        min-height: 30px;
+        font-size: 14px;
+        line-height: 2;
+    }
+}

@@ -1,0 +1,86 @@
+.pc.slot-booking-block{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    gap: 30px;
+    margin: 20px 0px;
+}
+
+.pc.slot-booking-block div#pc-slot-date-picker {
+    place-items: center;
+}
+
+
+#pc-time-slots {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, 1fr));
+  gap: 5px;
+  row-gap: 10px;
+  width: max-content;
+  height: max-content;
+}
+
+.time-slot input[type="radio"]:focus + label {
+  outline: 2px solid #00aaff;
+  outline-offset: 2px;
+}
+
+.time-slot input[type="radio"] {
+  display: none; /* Hide actual radio */
+}
+
+.time-slot label {
+  display: block;
+  font-size: 15px;
+  padding: 10px 15px;
+  text-align: center;
+  border: 2px solid #000000;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+/* Hover effect */
+.time-slot label:hover {
+  background-color: #414141;
+  border-color: #000000;
+  color: white;
+}
+
+/* Selected (checked) effect */
+.time-slot input[type="radio"]:checked + label {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  border-color: #000000;
+}
+
+#pc-slot-date-picker .ui-widget.ui-widget-content {
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+    border: 1px solid #000000;
+    background: #000000;
+    font-weight: normal;
+    color: #ffffff;
+}
+
+#pc-slot-date-picker .ui-datepicker-header.ui-widget-header.ui-helper-clearfix.ui-corner-all {
+  background: white !important;
+  border: 2px solid black;
+}
+
+@media  screen and (max-width: 660px) {
+    .pc.slot-booking-block{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    #pc-time-slots { 
+        margin: 0px auto;
+
+    }
+
+}
